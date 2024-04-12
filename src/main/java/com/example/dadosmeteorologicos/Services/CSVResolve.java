@@ -120,10 +120,7 @@ public class CSVResolve {
                 Double velVentoDouble = (velVento != null && !velVento.isEmpty()) ? Double.parseDouble(velVento) : null;
                 Double dirVentoDouble = (dirVento != null && !dirVento.isEmpty()) ? Double.parseDouble(dirVento) : null;
                 Double chuvaDouble = (chuva != null && !chuva.isEmpty()) ? Double.parseDouble(chuva) : null;
-                
-
-
-                
+                             
                 Registro novoRegistro = new Registro(data, hora, codigoEstacao, codigoCidade, "temperaturaMedia", temperaturaMediaDouble, 
                     service.validarTemperatura(temperaturaMediaDouble));
                 registroFiltrado.add(novoRegistro);
